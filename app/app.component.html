@@ -1,0 +1,5 @@
+<app-nav *ngIf="this._authService.isLoggedIn()"></app-nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="this._authService.isLoggedIn()"></app-footer>
